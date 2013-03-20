@@ -1,0 +1,79 @@
+\documentclass[a4paper,final,12pt]{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{marginnote}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{bibgerm}
+\usepackage{cite}
+\usepackage[justification=RaggedRight, singlelinecheck=false]{caption} 
+\usepackage{graphicx}
+\usepackage{listings}
+
+\usepackage[
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Projektdokumentation Hundertwasser},    % title
+    pdfauthor={Daniel Rhein},     % author
+    pdfsubject={Hundertwasser},   % subject of the document
+    pdfcreator={Daniel Rhein},   % creator of the document
+    pdfproducer={Daniel Rhein}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=black           % color of external links
+]{hyperref}
+
+\title{Projektdokumentation\\Verteilte Systeme}
+
+\author{Daniel Rhein}
+\date{20.03.2012}
+\begin{document}
+ \pagestyle{empty}
+\maketitle
+%Später titelblatt erstellen
+
+\pagestyle{fancy}
+\cfoot{}
+\rfoot{Seite \thepage}
+\tableofcontents
+\setcounter{chapter}{1}
+\newpage
+\section{Dokument History}
+	\begin{table}[h]
+	\begin{tabular}{|l|l|l|r|}\hline
+	Datum & Beschreibung & Bemerkung & Autor \\\hline
+	20.03.2013 & Draft & \LaTeX{} Dokument erstellt & Daniel Rhein \\\hline
+	20.03.2013 & Einarbeitung & Dokumentinhalt erstellt	 & Daniel Rhein \\\hline
+	\end{tabular}
+	\caption[Dokumenthistorie]{Dokumenthistorie}  
+	\end{table}
+
+\section{Zweck des Dokuments}
+\marginnote{20.03.2013 09:16 Uhr}
+In diesem Dokument soll das aktuelle Projekt und dessen Umsetzung sowie wichtige Entscheidungen Dokumentiert werden.
+\section{Aufgabe}
+Inhalte zusammenfassen und Dokument erstellen.
+\section{Socket}
+\section{RMI}
+\section{EJB}
+\section{JBOSS Application Server}
+\section{Clustering}
+
+\listoffigures
+\listoftables
+\bibliographystyle{geralpha}
+%\phantomsection 
+%\addcontentsline{toc}{chapter}{Literatur} 
+\bibliography{literaturverzeichnis} 
+\section{Appendix }
+\end{document}
